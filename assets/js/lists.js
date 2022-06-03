@@ -81,4 +81,4 @@ const generateLists = () => {
 	}
 };
 
-generateLists();
+//generateLists();

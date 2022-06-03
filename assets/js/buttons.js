@@ -12,6 +12,9 @@ const generateFirstButtonsContainer = () => {
           class="card button button__${button.id}"
         >
           <i class="buttonIcon" icon-name="${button.icon}"></i>
+		  <p>
+			${button.name}
+		  </p>
         </a>
     `;
 
@@ -23,15 +26,24 @@ const generateFirstButtonsContainer = () => {
 
 const generateSecondButtonsContainer = () => {
 	for (const button of CONFIG.secondButtonsContainer) {
+		let link = button.link
+		let extra = ""
+		if (button.extra) {
+			link = button.extra;
+			extra = `data-fslightbox="gallery"`;
+		}
+
 		let item = `
-        <a
-          href="${button.link}"
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          class="card button button__${button.id}"
-        >
-          <i class="buttonIcon" icon-name="${button.icon}"></i>
-        </a>
-    `;
+			<a
+			href="${link}"
+			${extra}
+			target="${CONFIG.openInNewTab ? '_blank' : ''}"
+			class="card button button__${button.id}"
+			>
+			<i class="buttonIcon" icon-name="${button.icon}"></i>
+			<p>${button.name}</p>
+			</a>
+		`;
 
 		const position = 'beforeend';
 
@@ -53,4 +65,4 @@ const generateButtons = () => {
 	}
 };
 
-generateButtons();
+//generateButtons();

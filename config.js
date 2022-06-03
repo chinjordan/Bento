@@ -11,19 +11,19 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
+	name: 'visitor!',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
+	greetingMorning: 'Good morning,',
 	greetingAfternoon: 'Good afternoon,',
 	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingNight: 'Go to sleep,',
 
 	// Layout
-	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+	bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
 	// Weather
 	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
@@ -43,8 +43,8 @@ const CONFIG = {
 
 	// Autochange by hour options (24hrs format, string must be in: hh:mm)
 	changeThemeByHour: false,
-	hourDarkThemeActive: '18:30',
-	hourDarkThemeInactive: '07:00',
+	hourDarkThemeActive: '19:30',
+	hourDarkThemeInactive: '07:30',
 
 	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
 	// ├┴┐│ │ │  │ │ ││││└─┐
@@ -53,78 +53,79 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
-			name: 'Github',
-			icon: 'github',
-			link: 'https://github.com/',
+			name: 'E-mail',
+			icon: 'mail',
+			link: 'mailto:jordanchin@duck.com',
 		},
 		{
 			id: '2',
-			name: 'Mail',
-			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
+			name: 'Portfolio',
+			icon: 'briefcase',
+			link: 'http://portfolio.jordanchin.ca/',
 		},
 		{
 			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
+			name: 'LinkedIn',
+			icon: 'linkedin',
+			link: 'https://www.linkedin.com/in/jordan-chin/',
 		},
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'Instagram',
+			icon: 'instagram',
+			link: 'https://www.instagram.com/retroneon/',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'French Verb Trainer',
+			icon: 'languages',
+			link: 'https://verbesfrancais.apppage.net/',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
-		},
+			name: 'Repeat in Shadows',
+			icon: 'headphones',
+			link: 'https://shadowing.apppage.net/',
+		}
 	],
 
 	secondButtonsContainer: [
 		{
 			id: '1',
-			name: 'Music',
-			icon: 'headphones',
-			link: 'https://open.spotify.com',
+			name: 'Blog',
+			icon: 'edit',
+			link: 'https://blog.jordanchin.ca',
 		},
 		{
 			id: '2',
-			name: 'twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com/',
+			name: 'Pacific Crest Trail',
+			icon: 'mountain',
+			link: 'https://www.postholer.com/journal/Pacific-Crest-Trail/2019/ilikemilk/2019-02-06/First-Entry/62964',
 		},
 		{
 			id: '3',
-			name: 'bot',
-			icon: 'bot',
-			link: 'https://discord.com/app',
+			name: 'Great Divide Trail',
+			icon: 'compass',
+			link: 'https://www.postholer.com/user/ilikemilk/3394',
 		},
 		{
 			id: '4',
-			name: 'Amazon',
-			icon: 'shopping-bag',
-			link: 'https://amazon.com/',
+			name: 'goodreads',
+			icon: 'book',
+			link: 'https://www.goodreads.com/user/show/44444651-jordan'
 		},
 		{
 			id: '5',
-			name: 'Hashnode',
-			icon: 'pen-tool',
-			link: 'https://hashnode.com/',
+			name: 'Discord',
+			icon: 'gamepad-2',
+			link: 'https://discordapp.com/users/ukonvasara#9581',
 		},
 		{
 			id: '6',
-			name: 'Figma',
-			icon: 'figma',
-			link: 'https://figma.com/',
+			name: 'Pokemon Go',
+			icon: 'backpack',
+			link: '',
+			extra: "img/pgo.png"
 		},
 	],
 
