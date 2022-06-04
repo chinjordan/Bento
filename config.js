@@ -54,37 +54,37 @@ const CONFIG = {
 		{
 			id: '1',
 			name: 'E-mail',
-			icon: 'mail',
+			icon: 'lucide:mail',
 			link: 'mailto:jordanchin@duck.com',
 		},
 		{
 			id: '2',
 			name: 'Portfolio',
-			icon: 'briefcase',
+			icon: 'lucide:briefcase',
 			link: 'http://portfolio.jordanchin.ca/',
 		},
 		{
 			id: '3',
 			name: 'LinkedIn',
-			icon: 'linkedin',
+			icon: 'lucide:linkedin',
 			link: 'https://www.linkedin.com/in/jordan-chin/',
 		},
 		{
 			id: '4',
-			name: 'Instagram',
-			icon: 'instagram',
-			link: 'https://www.instagram.com/retroneon/',
+			name: 'Pixelfed',
+			icon: 'ri:pixelfed-line',
+			link: 'https://pixelfed.social/jordan',
 		},
 		{
 			id: '5',
 			name: 'French Verb Trainer',
-			icon: 'languages',
+			icon: 'lucide:languages',
 			link: 'https://verbesfrancais.apppage.net/',
 		},
 		{
 			id: '6',
 			name: 'Repeat in Shadows',
-			icon: 'headphones',
+			icon: 'lucide:headphones',
 			link: 'https://shadowing.apppage.net/',
 		}
 	],
@@ -93,37 +93,37 @@ const CONFIG = {
 		{
 			id: '1',
 			name: 'Blog',
-			icon: 'edit',
+			icon: 'lucide:edit',
 			link: 'https://blog.jordanchin.ca',
 		},
 		{
 			id: '2',
 			name: 'Pacific Crest Trail',
-			icon: 'mountain',
+			icon: 'lucide:mountain-snow',
 			link: 'https://www.postholer.com/journal/Pacific-Crest-Trail/2019/ilikemilk/2019-02-06/First-Entry/62964',
 		},
 		{
 			id: '3',
 			name: 'Great Divide Trail',
-			icon: 'compass',
+			icon: 'lucide:compass',
 			link: 'https://www.postholer.com/user/ilikemilk/3394',
 		},
 		{
 			id: '4',
 			name: 'goodreads',
-			icon: 'book',
+			icon: 'cib:goodreads',
 			link: 'https://www.goodreads.com/user/show/44444651-jordan'
 		},
 		{
 			id: '5',
 			name: 'Discord',
-			icon: 'gamepad-2',
+			icon: 'ri:discord-line',
 			link: 'https://discordapp.com/users/ukonvasara#9581',
 		},
 		{
 			id: '6',
 			name: 'Pokemon Go',
-			icon: 'backpack',
+			icon: 'ic:twotone-catching-pokemon',
 			link: '',
 			extra: "img/pgo.png"
 		},
@@ -136,7 +136,7 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'lucide:music',
 			id: '1',
 			links: [
 				{
@@ -158,7 +158,7 @@ const CONFIG = {
 			],
 		},
 		{
-			icon: 'coffee',
+			icon: 'lucide:coffee',
 			id: '2',
 			links: [
 				{
@@ -184,7 +184,7 @@ const CONFIG = {
 	// Second Links Container
 	secondListsContainer: [
 		{
-			icon: 'binary',
+			icon: 'lucide:binary',
 			id: '1',
 			links: [
 				{
@@ -206,7 +206,7 @@ const CONFIG = {
 			],
 		},
 		{
-			icon: 'github',
+			icon: 'lucide:github',
 			id: '2',
 			links: [
 				{

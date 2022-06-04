@@ -11,7 +11,7 @@ const generateFirstButtonsContainer = () => {
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
           class="card button button__${button.id}"
         >
-          <i class="buttonIcon" icon-name="${button.icon}"></i>
+		  <span class="iconify buttonIcon" data-icon="${button.icon}"></span>
 		  <p>
 			${button.name}
 		  </p>
@@ -35,12 +35,12 @@ const generateSecondButtonsContainer = () => {
 
 		let item = `
 			<a
-			href="${link}"
-			${extra}
-			target="${CONFIG.openInNewTab ? '_blank' : ''}"
-			class="card button button__${button.id}"
+				href="${link}"
+				${extra}
+				target="${CONFIG.openInNewTab ? '_blank' : ''}"
+				class="card button button__${button.id}"
 			>
-			<i class="buttonIcon" icon-name="${button.icon}"></i>
+			<span class="iconify buttonIcon" data-icon="${button.icon}"></span>
 			<p>${button.name}</p>
 			</a>
 		`;
