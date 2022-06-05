@@ -34,6 +34,7 @@
   --imgcol: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
+
   ); /* Filter color */
 }
 
@@ -68,9 +69,12 @@
   transition: 0.2s ease-in-out;
 }
 
+body {
+  background-color: var(--background);
+}
+
 main {
   width: 100vw;
-  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: center;

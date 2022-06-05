@@ -3,7 +3,7 @@
 // ┴─┘┴ ┴ ┴ └─┘└─┘ ┴
 // Generate Layout.
 
-const generateLayout = () => {
+const generateLayout = (config) => {
 	let firstButtonsContainer = `
     <div class="buttonsContainer" id="buttons_1"></div>
   `;
@@ -20,7 +20,7 @@ const generateLayout = () => {
 
 	const position = 'beforeend';
 
-	switch (CONFIG.bentoLayout) {
+	switch (config.bentoLayout) {
 		case 'bento':
 			linksBlockLeft.insertAdjacentHTML(position, firstButtonsContainer);
 			linksBlockRight.insertAdjacentHTML(position, firstListsContainer);
@@ -41,5 +41,3 @@ const generateLayout = () => {
 			break;
 	}
 };
-
-generateLayout();

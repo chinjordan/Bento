@@ -3,12 +3,12 @@
 // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 // Function to print Button Cards.
 
-const generateFirstButtonsContainer = () => {
-	for (const button of CONFIG.firstButtonsContainer) {
+const generateFirstButtonsContainer = (config) => {
+	for (const button of config.firstButtonsContainer) {
 		let item = `
         <a
           href="${button.link}"
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
+          target="${config.openInNewTab ? '_blank' : ''}"
           class="card button button__${button.id}"
         >
 		  <span class="iconify buttonIcon" data-icon="${button.icon}"></span>
@@ -24,8 +24,8 @@ const generateFirstButtonsContainer = () => {
 	}
 };
 
-const generateSecondButtonsContainer = () => {
-	for (const button of CONFIG.secondButtonsContainer) {
+const generateSecondButtonsContainer = (config) => {
+	for (const button of config.secondButtonsContainer) {
 		let link = button.link
 		let extra = ""
 		if (button.extra) {
@@ -37,7 +37,7 @@ const generateSecondButtonsContainer = () => {
 			<a
 				href="${link}"
 				${extra}
-				target="${CONFIG.openInNewTab ? '_blank' : ''}"
+				target="${config.openInNewTab ? '_blank' : ''}"
 				class="card button button__${button.id}"
 			>
 			<span class="iconify buttonIcon" data-icon="${button.icon}"></span>
@@ -51,18 +51,17 @@ const generateSecondButtonsContainer = () => {
 	}
 };
 
-const generateButtons = () => {
-	switch (CONFIG.bentoLayout) {
+const generateButtons = (config) => {
+	switch (config.bentoLayout) {
 		case 'bento':
-			generateFirstButtonsContainer();
+			generateFirstButtonsContainer(config);
 			break;
 		case 'buttons':
-			generateFirstButtonsContainer();
-			generateSecondButtonsContainer();
+			generateFirstButtonsContainer(config);
+			generateSecondButtonsContainer(config);
 			break;
 		default:
 			break;
 	}
 };
 
-//generateButtons();
