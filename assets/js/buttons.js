@@ -4,6 +4,11 @@
 // Function to print Button Cards.
 
 const generateFirstButtonsContainer = (config) => {
+
+	if (document.getElementById("buttons_1").children.length > 0) {
+		return;
+	}
+
 	for (const button of config.firstButtonsContainer) {
 		let item = `
         <a
@@ -25,6 +30,11 @@ const generateFirstButtonsContainer = (config) => {
 };
 
 const generateSecondButtonsContainer = (config) => {
+
+	if (document.getElementById("buttons_2").children.length > 0) {
+		return;
+	}
+
 	for (const button of config.secondButtonsContainer) {
 		let link = button.link
 		let extra = ""

@@ -3,7 +3,6 @@
 //  ┴ ┴┴ ┴└─┘
 // Set time and Date
 
-
 const setTime = (config) => {
 	window.onload = displayClock();
 	function displayClock() {
