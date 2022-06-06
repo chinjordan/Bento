@@ -135,7 +135,7 @@ main {
 }
 
 .profileTitle {
-  font-size: 2.5vw;
+  font-size: 1vw;
   text-align: center
 }
 
@@ -409,6 +409,10 @@ main {
 }
 
 @media screen and (max-width: 60em) {
+  .profileTitle {
+    font-size: 2.5vw;
+  }
+
   .buttonsContainer {
     width: 100%;
     height: 100%;
