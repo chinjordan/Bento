@@ -118,6 +118,10 @@ main {
   padding: 20px;
 }
 
+.topBlock {
+  -webkit-text-fill-color: var(--fg);
+}
+
 .profile {
   border-radius: 50%;
   width: 100px;
@@ -128,12 +132,10 @@ main {
 .profileName {
   font-size: 3.5vw;
   font-weight: bold;
-  color: var(--fg);
 }
 
 .profileTitle {
   font-size: 2.5vw;
-  color: var(--fg);
   text-align: center
 }
 
@@ -158,7 +160,7 @@ main {
   justify-content: center;
 }
 
-.weatherBlock {
+.profileExtrasBlock {
   grid-column: 3 / span 2;
   grid-row: 1 / span 1;
   display: flex;
@@ -195,7 +197,6 @@ main {
 #minutes {
   font-size: var(--fg-primary);
   font-weight: bolder;
-  color: var(--fg);
 }
 
 #year,
@@ -204,7 +205,6 @@ main {
 #weekday {
   font-size: var(--fg-date);
   font-weight: bold;
-  color: var(--fg);
 }
 
 #weekday,
@@ -215,7 +215,6 @@ main {
 
 #greetings {
   font-size: var(--fg-secondary);
-  color: var(--fg);
 }
 
 .weatherIcon img {
@@ -378,7 +377,7 @@ main {
 @media only screen and (max-width: 68.75em) {
   .container {
     grid-gap: 20px;
-    padding: 40px;
+    padding: 10px;
   }
 
   .profileBlock {
@@ -386,21 +385,12 @@ main {
     grid-column: 1 / span 4;
   }
 
-  .weatherBlock {
+  .profileExtrasBlock {
     display: none;
   }
 
   #greetings {
     font-size: var(--fg-secondary);
-  }
-
-  .linksBlock {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 4;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1.5rem;
   }
 
   .linksBlockRight {
@@ -414,9 +404,7 @@ main {
   }
 
   .button {
-    grid-gap: 3vw;
-    padding-left: 100px;
-    padding-right: 100px;
+    grid-gap: 3vh;
   }
 }
 
@@ -427,8 +415,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 30px;
-    padding: 20px;
+    grid-gap: 20px;
+    padding: 10px;
   }
 
   .linksBlock {
@@ -436,15 +424,6 @@ main {
     grid-column: 1 / span 4;
     display: grid;
     grid-gap: 1.5rem;
-  }
-
-  .linksBlockLeft {
-    grid-row: 1 / span 1;
-  }
-
-  .linksBlockRight {
-    grid-row: 4 / span 2;
-    grid-column: 1 / span 4;
   }
 
   .button__1 {
@@ -498,14 +477,12 @@ main {
     padding-right: 50px;
   }
 
-  .linksBlockLeft {
-    grid-row: 1 / span 1;
+  .linksBlock {
+    font-size: 4vw;
   }
 
-  .linksBlockRight {
-    display: block;
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 4;
+  .linksBlockLeft {
+    grid-row: 1 / span 1;
   }
 
   .button__1 {
