@@ -23,6 +23,9 @@ const setTime = (config) => {
 			hh = hh % 12;
 			hh = hh ? hh : 12;
 		}
+		if (hh == "0") {
+			hh = "00"
+		}
 
 		document.getElementById('hour').innerText = hh;
 		document.getElementById('separator').innerHTML = ' : ';
