@@ -55,37 +55,37 @@ const CONFIG = {
 			id: '1',
 			name: 'E-mail',
 			icon: 'lucide:mail',
-			link: 'mailto:jordanchin@duck.com',
+			link: '',
 		},
 		{
 			id: '2',
 			name: 'Portfolio',
 			icon: 'lucide:briefcase',
-			link: 'http://portfolio.jordanchin.ca/',
+			link: '',
 		},
 		{
 			id: '3',
 			name: 'LinkedIn',
 			icon: 'lucide:linkedin',
-			link: 'https://www.linkedin.com/in/jordan-chin/',
+			link: 'https://www.linkedin.com/',
 		},
 		{
 			id: '4',
 			name: 'Pixelfed',
 			icon: 'ri:pixelfed-line',
-			link: 'https://pixelfed.social/jordan',
+			link: 'https://pixelfed.social/',
 		},
 		{
 			id: '5',
-			name: 'French Verb Trainer',
+			name: 'Translate',
 			icon: 'lucide:languages',
-			link: 'https://verbesfrancais.apppage.net/',
+			link: '',
 		},
 		{
 			id: '6',
-			name: 'Repeat in Shadows',
+			name: 'Audio',
 			icon: 'lucide:headphones',
-			link: 'https://shadowing.apppage.net/',
+			link: '',
 		}
 	],
 
@@ -94,38 +94,37 @@ const CONFIG = {
 			id: '1',
 			name: 'Blog',
 			icon: 'lucide:edit',
-			link: 'https://blog.jordanchin.ca',
+			link: '',
 		},
 		{
 			id: '2',
 			name: 'Pacific Crest Trail',
 			icon: 'lucide:mountain-snow',
-			link: 'https://www.postholer.com/journal/Pacific-Crest-Trail/2019/ilikemilk/2019-02-06/First-Entry/62964',
+			link: '',
 		},
 		{
 			id: '3',
 			name: 'Great Divide Trail',
 			icon: 'lucide:compass',
-			link: 'https://www.postholer.com/user/ilikemilk/3394',
+			link: '',
 		},
 		{
 			id: '4',
 			name: 'goodreads',
 			icon: 'cib:goodreads',
-			link: 'https://www.goodreads.com/user/show/44444651-jordan'
+			link: ''
 		},
 		{
 			id: '5',
 			name: 'Discord',
 			icon: 'ri:discord-line',
-			link: 'https://discordapp.com/users/ukonvasara#9581',
+			link: 'https://discordapp.com/',
 		},
 		{
 			id: '6',
 			name: 'Pokemon Go',
 			icon: 'ic:twotone-catching-pokemon',
 			link: '',
-			extra: "img/pgo.png"
 		},
 	],
 
