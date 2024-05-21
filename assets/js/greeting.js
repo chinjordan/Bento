@@ -13,7 +13,6 @@ const setGreeting = (config) => {
 	const gree3 = `${config.greetingAfternoon}\xa0`;
 	const gree4 = `${config.greetingEvening}\xa0`;
 
-<<<<<<< HEAD
 	if (hour >= 23 || hour < 6) {
 		document.getElementById('greetings').innerText = gree1 + name;
 	} else if (hour >= 6 && hour < 12) {
@@ -24,15 +23,3 @@ const setGreeting = (config) => {
 		document.getElementById('greetings').innerText = gree4 + name;
 	}
 }
-
-=======
-if (hour >= 23 || hour < 6) {
-	document.getElementById('greetings').innerText = gree1 + name;
-} else if (hour >= 6 && hour < 12) {
-	document.getElementById('greetings').innerText = gree2 + name;
-} else if (hour >= 12 && hour < 17) {
-	document.getElementById('greetings').innerText = gree3 + name;
-} else {
-	document.getElementById('greetings').innerText = gree4 + name;
-}
->>>>>>> master
